@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('font/Raleway-VariableFont_wght.ttf');
+}
+
+* { /* box-sizing appliqué à tous les éléments */
+    box-sizing: border-box;
+}
