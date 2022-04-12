@@ -132,12 +132,17 @@ nav a:hover {
     margin-right: 13px;
 }
 
+.filtres a:hover {
+ color: red;
+}
+
 /* ----- INFOS SUPPLÉMENTAIRES ----- */
 #infos {
     display: flex;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
-
 #fasInfo {
     border: solid #f2f2f2 3px;
     border-radius: 100px;
@@ -145,4 +150,52 @@ nav a:hover {
     padding: 8px 13px 8px 13px;
 
     color: #0065FC;
+}
+
+/* ----- HÉBERGEMENTS À MARSEILLE ----- */
+/* -- ÉTOILES -- */
+.fa-solid {
+    color: #0065FC;
+}
+.fa-regular {
+    border: none;
+    color: #0065FC;
+}
+/** -- BLOC SECTION -- */
+#hebergement {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+
+    padding: 18px 45px 18px 45px;
+}
+/* -- CONTENU SECTION -- */
+.cannebiere {
+    border: 7px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(199, 199, 199);
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+#cannebiere {
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cannebiere h3 {
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.cannebiere p {
+    margin-top: -15px;
+    margin-left: 7px;
+
+    font-size: 16px;
+}
+.stars {
+    margin-top: -10px;
+    margin-left: 7px;
 }
