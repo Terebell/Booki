@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     src: url('font/Raleway-VariableFont_wght.ttf');
 }
 
@@ -8,7 +8,7 @@
     font-family: "Raleway";
 }
 
-#bloc_page {
+#blocPage {
     width: 95%;
     margin: auto;
 }
@@ -21,6 +21,12 @@ p {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /* ----- NAVIGATION ----- */
 #navigation {
@@ -31,7 +37,7 @@ p {
     margin-bottom: 2%;
 }
 
-.logo {
+.logoBooki {
     width: 50%;
     margin-left: 1%;
 }
@@ -45,10 +51,6 @@ nav ul {
 nav li {
     display: flex;
     margin-right: 40%;
-}
-nav a {
-    text-decoration: none;
-    color: black;
 }
 
 nav a:hover {
@@ -93,4 +95,39 @@ nav a:hover {
     font-weight: bold;
     color: white;
     font-size: 18px;
+}
+
+/* ----- FILTRES ----- */
+#filtres { /* correspond à TOUTE la partie "filtres" */
+    display: flex;
+    align-items: center;
+}
+
+#filtreTitle {
+    font-weight: bold;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+
+    border: solid #f2f2f2 3px;
+    border-left: none;
+    border-radius: 100px;
+
+    margin-left: 20px;
+    padding-right: 20px;
+
+    font-weight: bold;
+}
+
+#fasEconomy, #fasFamily, #fasLove, #fasPets {
+    border: solid #DEEBFF 5px;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+
+    color: #0065FC;
+
+    padding: 13px;
+    margin-right: 15px;
 }

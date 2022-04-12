@@ -12,12 +12,12 @@
     </head>
 
     <body>
-    <div id="bloc_page"> <!-- CONTENU TOTAL DE LA PAGE -->
+    <div id="blocPage"> <!-- CONTENU TOTAL DE LA PAGE -->
 
         <header>
             <nav id="navigation">
-                <div id="logo_booki">
-					<a href="#"><img src="images/logo/Booki@3x.png" alt="Logo de Booki" class="logo"/></a> <!-- Logo affiché en haut à gauche de la page d'accueil -->
+                <div>
+					<a href="#"><img src="images/logo/Booki@3x.png" alt="Logo de Booki" class="logoBooki"/></a> <!-- Logo affiché en haut à gauche de la page d'accueil -->
 				</div>
                 <ul id="menu">
                     <li><a href="#hebergement">Hébergements</a></li>
@@ -29,7 +29,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="complement">En plein centre ville ou en pleine nature</p>
                 <div id="search">
-                    <form method="post" action="traitement.php" id="search_form"> <!-- Zone de saisie de la recherche -->
+                    <form method="post" action="traitement.php"> <!-- Zone de saisie de la recherche -->
                         <p>
                             <i class="fa-solid fa-location-dot" id="fasLocation"></i>
                             <input type="search" name="ville" id="ville" placeholder="Marseille, France" />
@@ -41,15 +41,15 @@
 
             <!-- FILTRES DE RECHERCHE -->
             <div id="filtres">
-                <p>Filtres</p>
-                <a href="économique" class="filtre1"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
-                <a href="familial" class="filtre2"><i class="fa-solid fa-child-reaching"></i>Familial</a>
-                <a href="romantique" class="filtre3"><i class="fa-solid fa-heart"></i>Romantique</a>
-                <a href="animaux" class="filtre4"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+                <p id="filtreTitle">Filtres</p>
+                <a href="economique" class="filtres"><i class="fa-solid fa-money-bill-wave" id="fasEconomy"></i>Économique</a>
+                <a href="familial" class="filtres"><i class="fa-solid fa-children"id="fasFamily"></i>Familial</a>
+                <a href="romantique" class="filtres"><i class="fa-solid fa-heart" id="fasLove"></i>Romantique</a>
+                <a href="animaux" class="filtres"><i class="fa-solid fa-dog" id="fasPets"></i>Animaux autorisés</a>
             </div>
 
             <div id="infos">
-                <p class="infos"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="infos"><i class="fa-solid fa-info" id="fasInfo"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
 
@@ -57,7 +57,7 @@
             <!-- SECTION "HÉBERGEMENTS À MARSEILLE" -->
             <section id="hebergement">
                 <h1>Hébergements à Marseille</h1>
-                <div id="hebergement_marseille">
+                <div id="hebergementMarseille">
 
                     <a href="#" class="cannebiere">
                         <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" id="cannebiere" />
@@ -135,10 +135,10 @@
             <!-- SECTION "ACTIVITÉS À MARSEILLE" -->
             <section id="activites">
                 <h1>Activités à Marseille</h1>
-                <div id="activites_marseille">
+                <div id="activitesMarseille">
 
-                    <a href="#" class="vieux_port">
-                        <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" id="vieux_port" />
+                    <a href="#" class="vieuxPort">
+                        <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" id="vieuxPort" />
                         <h3>Vieux port</h3>
                     </a>
 
@@ -160,8 +160,8 @@
                     </a>
 
                     <div id="colonne2">
-                        <a href="#" class="notre_dame">
-                            <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="notre_dame" />
+                        <a href="#" class="notreDame">
+                            <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="notreDame" />
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </a>
 
@@ -177,7 +177,7 @@
         <!-- FOOTER -->
         <footer>
             <div id="footer">
-                <div id="a_propos">
+                <div id="aPropos">
                     <h4>À propos</h4>
                     <ul>
                         <li><a href="#">Fonctionnement du site</a></li>
@@ -186,7 +186,7 @@
                     </ul>
                 </div>
 
-                <div id="nos_hebergements">
+                <div id="nosHebergements">
                     <h4>Nos hébergements</h4>
                     <ul>
                         <li><a href="#">Charte qualité</a></li>
