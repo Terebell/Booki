@@ -154,12 +154,11 @@ nav a:hover {
 
 /* ----- HÉBERGEMENTS À MARSEILLE ----- */
 /* -- ÉTOILES -- */
-.fa-solid {
+.blue {
     color: #0065FC;
 }
-.fa-regular {
-    border: none;
-    color: #0065FC;
+.gray {
+    color: gray;
 }
 /** -- BLOC SECTION -- */
 #hebergement {
