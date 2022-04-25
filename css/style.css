@@ -7,26 +7,20 @@
     box-sizing: border-box;
     font-family: "Raleway";
 }
-
 body {
-    width: 95%;
+    width: 93%;
     margin: auto;
 }
-
 h1 {
     font-size: 28px;
 }
-
 p {
     font-size: 20px;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
-
 
 /* ----- NAVIGATION ----- */
 #navigation {
@@ -36,7 +30,6 @@ a {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 .logoBooki {
     width: 50%;
     margin-left: 1%;
@@ -102,11 +95,9 @@ nav a:hover {
     display: flex;
     align-items: center;
 }
-
 #filtreTitle {
     font-weight: bold;
 }
-
 .filtres {
     display: flex;
     align-items: center;
@@ -120,20 +111,31 @@ nav a:hover {
 
     font-weight: bold;
 }
-
-#fasEconomy, #fasFamily, #fasLove, #fasPets {
+#fasEconomy, #fasLove, #fasPets {
     border: solid #DEEBFF 5px;
     border-radius: 100px;
     background-color: #DEEBFF;
 
     color: #0065FC;
 
-    padding: 13px;
+    padding: 10px;
+    margin-right: 13px;
+}
+#fasFamily {
+
+    border: solid #DEEBFF 5px;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+
+    color: #0065FC;
+
+    padding: 10px 14px 10px 14px;
     margin-right: 13px;
 }
 
-.filtres a:hover {
- color: red;
+.filtres:hover {
+    color: #0065FC;
+    box-shadow: 2px 1px 15px #0065FC;
 }
 
 /* ----- INFOS SUPPLÉMENTAIRES ----- */
@@ -153,48 +155,126 @@ nav a:hover {
 }
 
 /* ----- HÉBERGEMENTS À MARSEILLE ----- */
+/* ----- SECTION HÉBERGEMENTS ----- */
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
 /* -- ÉTOILES -- */
 .blue {
     color: #0065FC;
 }
 .gray {
-    color: gray;
+    color: #d1d1d1;
 }
-/** -- BLOC SECTION -- */
-#hebergement {
+/** -- BLOC HÉBERGEMENT -- */
+#heb {
     background-color: #f2f2f2;
     border-radius: 30px;
 
+    width: 67%;
+
     padding: 18px 45px 18px 45px;
 }
-/* -- CONTENU SECTION -- */
-.cannebiere {
-    border: 7px solid white;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 2px 2px 20px rgb(199, 199, 199);
-    width: 300px;
-
-    display: flex;
-    flex-direction: column;
-}
-#cannebiere {
-    height: 150px;
-    border-radius: 15px 15px 0 0;
-}
-
-.cannebiere h3 {
+#heb h3 {
     margin-top: 10px;
     margin-left: 7px;
 }
-
-.cannebiere p {
+#heb p {
     margin-top: -15px;
     margin-left: 7px;
 
     font-size: 16px;
 }
-.stars {
+/* -- CONTENU HÉBERGEMENT -- */
+#hebergementMarseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cannebiere, .port, .mouette, .mer, .panier, .amina {
+    border: 7px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(199, 199, 199);
+    width: 320px;
+
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#cannebiere, #port, #mouette, #mer, #panier, #amina {
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#hebergementMarseille .stars {
     margin-top: -10px;
     margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+/** -- BLOC POPULAIRE -- */
+#pop {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    width: 31%;
+
+    padding: 18px 45px 18px 45px;
+
+    display: flex;
+    flex-direction: column;
+}
+.popTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* -- CONTENU POPULAIRE -- */
+#populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#populaire .text {
+    display: flex;
+    flex-direction: column;
+}
+
+#populaire h3 {
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#populaire p {
+    margin-top: -15px;
+    margin-left: 7px;
+
+    font-size: 16px;
+}
+#populaire .stars {
+    margin-top: 15px;
+    margin-left: 7px;
+}
+.soleil, .eau, .bleu {
+    border: 7px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(199, 199, 199);
+    width: 450px;
+    height: 180px;
+
+    margin-bottom: 40px;
+
+
+    display: flex;
+}
+#soleil, #eau, #bleu {
+    width: 150px;
+    /* height: 135px; */
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
 }
