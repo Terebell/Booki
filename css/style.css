@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: "Raleway";
 }
-body {
+header, main {
     width: 93%;
     margin: auto;
 }
@@ -17,8 +17,10 @@ h1 {
 h2 {
     font-size: 25px;
 }
-h3 {
+h3, em {
     font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
 }
 p {
     font-size: 20px;
@@ -357,4 +359,33 @@ nav a:hover {
     height: 200px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+}
+
+/* ----- FOOTER ----- */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    
+    margin-top: 30px;
+    padding: 30px 500px 30px 0;
+
+    /* padding-right: 500px;
+    padding-top: 30px;
+    padding: b; */
+}
+footer ul {
+    list-style-type: none;
+    list-style-position: outside;
+    
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-left: 30px;
+}
+footer li {
+    padding-top: 12px;
+}
+.foot {
+    margin-top: 20px;
 }
