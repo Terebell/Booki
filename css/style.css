@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 25px;
 }
-h3, em {
+h3 {
     font-size: 21px;
     font-style: normal;
     font-weight: bold;
@@ -108,8 +108,8 @@ nav .active {
 #filtres { /* correspond à TOUTE la partie "filtres" */
     display: flex;
     align-items: center;
-}
-#filtreTitle {
+    flex-wrap: wrap;
+
     font-weight: bold;
 }
 .filtres {
@@ -209,7 +209,8 @@ nav .active {
     display: flex;
     flex-direction: column;
 
-    border: 7px solid white;
+    padding: 7px;
+    /* border: 7px solid white; */
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #e4e4e4;
@@ -232,14 +233,14 @@ nav .active {
 #pop {
     background-color: #f2f2f2;
     border-radius: 30px;
-    width: 31%;
+    /* width: 50%; */
 
     padding: 18px 45px 18px 45px;
 
     display: flex;
     flex-direction: column;
-    min-width: 450px;
-    margin-left: 5%;
+    /* min-width: 200px; */
+    margin-left: 2%;
 }
 .popTitle {
     display: flex;
@@ -256,7 +257,6 @@ nav .active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 #populaire h3 {
     margin-top: 10px;
@@ -269,13 +269,13 @@ nav .active {
     font-size: 16px;
 }
 #populaire .stars {
-    margin-bottom: 7px;
+    padding-bottom: 7px;
     margin-left: 20px;
 }
 .vignettePop {
     display: flex;
     
-    border: 7px solid white;
+    padding: 7px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #e4e4e4;
@@ -370,24 +370,24 @@ nav .active {
 /* ----- FOOTER ----- */
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: #f2f2f2;
     
     margin-top: 30px;
-    padding: 30px 500px 30px 0;
+    padding: 2%;
 }
+
 footer ul {
     list-style-type: none;
     list-style-position: outside;
     
     font-size: 20px;
-    font-weight: 500;
-
-    margin-left: 30px;
+    padding-left: 0px;
+    padding-right: 70px;
 }
 footer li {
     padding-top: 12px;
 }
 .foot {
-    margin-top: 20px;
+    width: 350px;
+    padding-left: 2%;
 }

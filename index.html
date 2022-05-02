@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <script src="https://kit.fontawesome.com/179a3bc40a.js" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/tablette.css" />
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
@@ -40,7 +41,7 @@
 
             <!-- FILTRES DE RECHERCHE -->
             <div id="filtres">
-                <p id="filtreTitle">Filtres</p>
+                <p>Filtres</p>
                 <a href="#" class="filtres"><i class="fas fa-money-bill-wave" id="fasEconomy"></i>Économique</a>
                 <a href="#" class="filtres"><i class="fa-solid fa-child-reaching" id="fasFamily"></i>Familial</a>
                 <a href="#" class="filtres"><i class="fas fa-heart" id="fasLove"></i>Romantique</a>
@@ -116,7 +117,7 @@
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de <strong>128 €</strong></p>
                                 </div>
-                                    <span class="stars"><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i></span>
+                                <span class="stars"><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i></span>
                             </div>
                         </a>
 
@@ -189,37 +190,28 @@
 
         <!-- FOOTER -->
         <footer>
-            <!-- <div id="footer"> -->
-
-                <div id="aPropos">
-                    <ul><em>À propos</em>
-                        <div class="foot">
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales de vente</a></li>
-                            <li><a href="#">Données et confidentialité</a></li>
-                        </div>
-                    </ul>
-                </div>
-
-                <div id="nosHebergements">
-                    <ul><em>Nos hébergements</em>
-                        <div class="foot">
-                            <li><a href="#">Charte qualité</a></li>
-                            <li><a href="#">Soumettre votre hôtel</a></li>
-                        </div>
-                    </ul>
-                </div>
-
-                <div id="assistance">
-                    <ul><em>Assistance</em>
-                        <div class="foot">
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </div>
-                    </ul>
-                </div>
-
-            <!-- </div> -->
+            <div class="foot">
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+                <div class="foot">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>

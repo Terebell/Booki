@@ -1,3 +1,63 @@
 @media screen and (max-width: 992px) {
+
+    #hebergement {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: auto;
+    }
+    #pop, #heb {
+        width: 100%; 
+        /* padding: 18px 45px 18px 45px; */
+        margin: 0;
+    }
+    #pop {
+        margin-bottom: 5%;
+    }
+    .photoPop{
+        width: 200px;
+    }
+
+
+
+
+
+
+
     
+    #activitesMarseille {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%
+    }    
+    .vieuxPort, .pomegues, .frioul, .calanques, .notreDame, .longchamp {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 2px 2px 20px #e4e4e4;
+        height: 270px;
+        width: 400px;
+        margin-bottom: 40px;
+        }
+    #vieuxPort, #pomegues, #frioul, #calanques, #notreDame, #longchamp {
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+
+
+    footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 2% 10% 2% 10%;
+    }
+    footer ul {
+        margin-left: 0;
+        font-size: 15px;
+        align-items: center;
+
+    }
+
 }
