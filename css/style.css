@@ -21,7 +21,7 @@ h2 {
     font-size: 25px;
 }
 h3, em {
-    font-size: 22px;
+    font-size: 21px;
     font-style: normal;
     font-weight: bold;
 }
@@ -238,6 +238,8 @@ nav .active {
 
     display: flex;
     flex-direction: column;
+    min-width: 450px;
+    margin-left: 5%;
 }
 .popTitle {
     display: flex;
@@ -254,6 +256,7 @@ nav .active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 #populaire h3 {
     margin-top: 10px;
