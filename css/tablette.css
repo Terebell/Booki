@@ -6,6 +6,9 @@
     width: 100%;
     margin: auto;
     }
+    #hebergementMarseille {
+        justify-content: space-around;
+    }
     #pop, #heb {
         width: 100%; 
         /* padding: 18px 45px 18px 45px; */
@@ -18,13 +21,16 @@
         width: 200px;
     }
 
+    #activites{
+        margin: auto;
+    }
     #activitesMarseille {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%
     }    
-    .vieuxPort, .pomegues, .frioul, .calanques, .notreDame, .longchamp {
+    /* .vieuxPort, .pomegues, .frioul, .calanques, .notreDame, .longchamp {
         border-radius: 20px;
         background-color: white;
         box-shadow: 2px 2px 20px #e4e4e4;
@@ -35,7 +41,7 @@
         height: 200px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
-    }
+    } */ 
     
 
 

@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) { 
-    main {
+    main, header {
         width: 100%;
     }
 
@@ -8,29 +8,47 @@
         flex-direction: column;
         padding-bottom: 2%;
     }
+    #navigation {
+        text-align: center;
+    }
     nav ul {
         display: flex;
-        justify-content: space-around;
-        margin-right: 0;
         font-size: 20px;
         font-weight: bold;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
     }
     nav li {
-        text-decoration: underline 4px #f2f2f2;
-        text-underline-offset: 70%;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 4px #f2f2f2 solid;
     }
     nav .active {
-        text-decoration: underline 4px;
-        text-underline-offset: 70%;
+        border-top: none;
+        border-bottom: 4px #0065FC solid;
     }
-
+    
+    #recherche {
+        padding:0 6% 0 6%;
+    }
+    #filtres a{
+        margin-bottom: 2%;
+    }
+    header h2 {
+        display: block;
+        width: 100%;
+    }
     #search {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 2%;
     }
-    #search button span { /* bouton "rechercher" texte */
+    #search button span {
         display: none;
     }
     #search button .fa-magnifying-glass {
@@ -56,10 +74,33 @@
     #activites {
         display: flex;
         flex-direction: column;
+        width: 88%;
+        margin-top: 2%;
     }
+    #activitesMarseille {
+        width: 100%;
+    }
+    .vieuxPort, .pomegues, .frioul, .calanques, .notreDame, .longchamp {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 2px 2px 20px #e4e4e4;
+        height: 270px;
+        margin-bottom: 40px;
+        width: 100%;
+        }
+
+    #colonne1, #colonne2 {
+        width: 100%;
+    }
+    #vieuxPort, #pomegues, #frioul, #calanques, #notreDame, #longchamp {
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    } 
 
     footer {
         display: flex;
         flex-direction: column;
     }
+
 }

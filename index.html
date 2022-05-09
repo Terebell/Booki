@@ -15,15 +15,14 @@
 
         <header>
             <nav id="navigation">
-                <div>
 					<a href="#"><img src="images/logo/Booki@3x.png" alt="Logo de Booki" class="logoBooki"/></a> <!-- Logo affiché en haut à gauche de la page d'accueil -->
-				</div>
                 <ul>
-                    <li><a href="#hebergement" class="active">Hébergements</a></li>
+                    <li class="active"><a href="#hebergement">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
 
+            <div id="recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="complement">En plein centre ville ou en pleine nature</p>
                 <div id="search">
@@ -33,16 +32,16 @@
                             <input type="search" name="ville" id="ville" placeholder="Marseille, France" />
                             <button>
                                 <span>Rechercher</span>
-                                <!-- <input type="submit" value="Rechercher" id="submit" /> -->
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </p>
                     </form>
                 </div>
+            
 
             <!-- FILTRES DE RECHERCHE -->
             <div id="filtres">
-                <p>Filtres</p>
+                <h2>Filtres</h2>
                 <a href="#" class="filtres"><i class="fas fa-money-bill-wave" id="fasEconomy"></i>Économique</a>
                 <a href="#" class="filtres"><i class="fa-solid fa-child-reaching" id="fasFamily"></i>Familial</a>
                 <a href="#" class="filtres"><i class="fas fa-heart" id="fasLove"></i>Romantique</a>
@@ -52,6 +51,7 @@
             <div id="infos"> <!-- LIGNE D'INFOS-->
                 <i class="fas fa-info" id="fasInfo"></i><p class="infos">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+        </div>
         </header>
 
         <main> <!-- CONTIENT LES 2 SECTIONS "HÉBERGEMENT" ET "ACTIVITÉS" -->

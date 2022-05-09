@@ -57,9 +57,7 @@ nav li {
 }
 
 nav .active {
-    color: #0065FC;
-    text-decoration: underline 2px;
-    text-underline-offset: -300%;
+    border-top: 2px solid #0065FC ;
 }
 
 /* ----- TITRE + RECHERCHE ----- */
@@ -103,6 +101,9 @@ button {
 }
 
 /* ----- FILTRES ----- */
+header h2 {
+    display: inline;
+}
 #filtres { /* correspond à TOUTE la partie "filtres" */
     display: flex;
     align-items: center;
