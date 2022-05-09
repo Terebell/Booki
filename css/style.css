@@ -44,7 +44,6 @@ a {
 }
 .logoBooki {
     width: 50%;
-    margin-left: 1%;
 }
 nav ul {
     display: flex;
@@ -67,22 +66,19 @@ nav .active {
 .complement { /* Sous-titre */
     margin-top: -13px;
 }
-
 #search {
-    display: flex;
     align-items: center;
-    margin-top: -20px;
 }
-#fasLocation { /* icône position */
-    padding: 18px;
+.fa-location-dot {
+    padding: 13px;    
     margin-right: -5px;
-    
     background-color: #f2f2f2;
     border: solid #f2f2f2 3px;
     border-radius: 18px 0 0 18px;
+    height: 53px;
 }
-#ville { /* champ de recherche */
-    padding: 18px;
+#search input {
+    padding: 13px;
     
     border: solid #f2f2f2 3px;
     border-right: none;
@@ -91,17 +87,19 @@ nav .active {
     font-weight: bold;
     font-size: 18px;
 }
-#submit { /* bouton "rechercher" */
-    padding: 18px;
-    margin-left: -5px;
-    
-    background-color: #0065FC;
-    border: solid #0065FC 3px;
-    border-radius: 0 18px 18px 0;
-    
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
+button {
+        background-color: #0065FC;
+        color: white;
+        height: 53px;
+        border: none;
+        border-radius: 0px 18px 18px 0px;
+        padding: 15px;
+        margin-left: -5px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+#search button .fa-magnifying-glass {
+    display: none;
 }
 
 /* ----- FILTRES ----- */

@@ -1,3 +1,65 @@
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 768px) { 
+    main {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav li {
+        text-decoration: underline 4px #f2f2f2;
+        text-underline-offset: 70%;
+    }
+    nav .active {
+        text-decoration: underline 4px;
+        text-underline-offset: 70%;
+    }
+
+    #search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    #search button span { /* bouton "rechercher" texte */
+        display: none;
+    }
+    #search button .fa-magnifying-glass {
+        display: block;
+    }
+
+    #heb {
+        background: none;
+    }
+    #hebergementMarseille {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vignette {
+        width: 100%;
+    }
+
+    #pop {
+        border-radius: 0;
+    }
+
+    #activites {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
