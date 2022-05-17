@@ -1,11 +1,8 @@
-@font-face {
-    font-family: "Raleway", sans-serif;
-    src: url('font/Raleway-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * { /* box-sizing appliqué à tous les éléments */
     box-sizing: border-box;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
 }
 body {
     margin: 0px;
@@ -16,6 +13,7 @@ header, main {
 }
 h1 {
     font-size: 29px;
+    font-weight:900;
 }
 h2 {
     font-size: 25px;
