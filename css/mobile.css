@@ -11,6 +11,9 @@
     #navigation {
         text-align: center;
     }
+    .logoBooki {
+        margin-top: 7%;
+    }
     nav ul {
         display: flex;
         font-size: 20px;
