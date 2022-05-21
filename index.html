@@ -11,25 +11,25 @@
         <title>Booki</title>
     </head>
 
-    <body> <!-- CONTENU TOTAL DE LA PAGE -->
+    <!-- CONTENU TOTAL DE LA PAGE -->
+    <body> 
 
         <header>
-            <nav id="navigation">
-					<a href="#"><img src="images/logo/Booki@3x.png" alt="Logo de Booki" class="logoBooki"/></a> <!-- Logo affiché en haut à gauche de la page d'accueil -->
+            <nav>
+				<a href="#"><img src="images/logo/Booki@3x.png" alt="Logo de Booki" class="logoBooki"/></a>
                 <ul>
                     <li><a href="#hebergement" class="active">Hébergements</a></li>
                     <li><a href="#activites" class="inactive">Activités</a></li>
                 </ul>
             </nav>
 
-            <div id="recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="complement">En plein centre ville ou en pleine nature</p>
                 <div id="search">
-                    <form method="post" action="traitement.php"> <!-- Zone de saisie de la recherche -->
+                    <form method="post" action="traitement.php">
                         <p>
                             <i class="fas fa-location-dot"></i>
-                            <input type="search" name="ville" id="ville" placeholder="Marseille, France" />
+                            <input type="search" name="ville" placeholder="Marseille, France" />
                             <button>
                                 <span>Rechercher</span>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -37,7 +37,6 @@
                         </p>
                     </form>
                 </div>
-            
 
             <!-- FILTRES DE RECHERCHE -->
             <div id="filtres">
@@ -49,9 +48,8 @@
             </div>
 
             <div id="infos"> <!-- LIGNE D'INFOS-->
-                <i class="fas fa-info" id="fasInfo"></i><p class="infos">Plus de 500 logements sont disponibles dans cette ville</p>
+                <i class="fas fa-info"></i><p class="infos">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </div>
         </header>
 
         <main> <!-- CONTIENT LES 2 SECTIONS "HÉBERGEMENT" ET "ACTIVITÉS" -->
@@ -63,9 +61,9 @@
 
                         <a href="#" class="vignette">
                             <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="photo" />
-                                <h3>Auberge La Cannebière</h3>
-                                <p>Nuit à partir de <strong>25 €</strong></p>
-                                <span class="stars"><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star gray"></i></span>
+                            <h3>Auberge La Cannebière</h3>
+                            <p>Nuit à partir de <strong>25 €</strong></p>
+                            <span class="stars"><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star gray"></i></span>
                         </a>
 
                         <a href="#" class="vignette">
