@@ -1,4 +1,8 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+
+    .fa-location-dot {
+        padding: 18px 13px 20px 13px;
+    }
 
     #hebergement {
     display: flex;

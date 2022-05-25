@@ -1,141 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-* { /* box-sizing appliqué à tous les éléments */
+* {
+    /* box-sizing appliqué à tous les éléments */
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
+
 body {
     margin: 0px;
 }
-header, main {
+
+header,
+main {
     width: 93%;
     margin: auto;
 }
-h1 {
-    font-size: 29px;
-    font-weight:900;
-}
+
 h2 {
+    font-size: 29px;
+    font-weight: 900;
+}
+
+h3 {
     font-size: 25px;
 }
-h3 {
+
+h4 {
     font-size: 21px;
     font-style: normal;
     font-weight: bold;
 }
+
 p {
     font-size: 20px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 /* ----- NAVIGATION ----- */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logoBooki {
     width: 50%;
 }
+
 nav ul {
     display: flex;
-    margin-right: 9%;
+    margin-right: 2%;
     list-style-type: none;
     font-size: 18px;
 }
+
 nav li {
     display: flex;
-    margin-right: 40%;
+    margin-left: 30px;
+    padding: 25px 15px 25px 15px;
+}
 
-   
+nav li:hover {
+    border-top: 2px solid #0065FC;
 }
-nav .active {
-    border-top: 2px solid #0065FC ;
+
+nav a:hover {
     color: #0065FC;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-nav .inactive {
-    padding-top: 27px;
-    padding-bottom: 25px;
 }
 
 /* ----- TITRE + RECHERCHE ----- */
-.complement { /* Sous-titre */
+.complement {
+    /* Sous-titre */
     margin-top: -13px;
 }
+
 #search {
     align-items: center;
 }
+
 .fa-location-dot {
-    padding: 13px;    
+    padding: 15px 13px 1px 13px;
     margin-right: -5px;
     background-color: #f2f2f2;
     border: solid #f2f2f2 3px;
     border-radius: 18px 0 0 18px;
     height: 53px;
+    align-items: center;
 }
+
 #search input {
     padding: 13px;
-    
+
     border: solid #f2f2f2 3px;
     border-right: none;
     border-left: none;
-    
+
     font-weight: bold;
     font-size: 18px;
 }
+
 button {
-        background-color: #0065FC;
-        color: white;
-        height: 53px;
-        border: none;
-        border-radius: 0px 18px 18px 0px;
-        padding: 15px;
-        margin-left: -5px;
-        font-weight: bold;
-        font-size: 18px;
-    }
+    background-color: #0065FC;
+    color: white;
+    height: 53px;
+    border: none;
+    border-radius: 0px 18px 18px 0px;
+    padding: 15px;
+    margin-left: -5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 #search button .fa-magnifying-glass {
     display: none;
 }
 
 /* ----- FILTRES ----- */
-header h2 {
+header h3 {
     display: inline;
 }
-#filtres { /* correspond à TOUTE la partie "filtres" */
+
+#filtres {
+    /* correspond à TOUTE la partie "filtres" */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
     font-weight: bold;
 }
+
 .filtres {
     display: flex;
     align-items: center;
-    
+
     border: solid #f2f2f2 3px;
     border-left: none;
     border-radius: 100px;
-    
+
     margin-left: 20px;
     padding-right: 20px;
-    
+
     font-weight: bold;
 }
-#fasEconomy, #fasLove, #fasPets {
+
+#fasEconomy,
+#fasLove,
+#fasPets {
     border: solid #DEEBFF 5px;
     border-radius: 100px;
-    
+
     background-color: #DEEBFF;
     color: #0065FC;
-    
+
     padding: 10px;
     margin-right: 13px;
 }
+
 #fasFamily {
     border: solid #DEEBFF 5px;
     border-radius: 100px;
@@ -158,6 +182,7 @@ header h2 {
     margin-top: 15px;
     margin-bottom: 25px;
 }
+
 .fa-info {
     border: solid #f2f2f2 3px;
     border-radius: 100px;
@@ -174,13 +199,16 @@ header h2 {
     justify-content: space-between;
     width: 100%
 }
+
 /* -- ÉTOILES -- */
 .blue {
     color: #0065FC;
 }
+
 .gray {
     color: #d1d1d1;
 }
+
 /** -- BLOC HÉBERGEMENT -- */
 #heb {
     background-color: #f2f2f2;
@@ -188,27 +216,34 @@ header h2 {
 
     width: 67%;
 
-    padding: 18px 45px 18px 45px;
+    padding: 18px 20px 18px 45px;
 }
-#heb h3 {
+
+#heb h4 {
     margin-top: 10px;
     margin-left: 10px;
 }
+
 #heb p {
     margin-top: -15px;
     margin-left: 10px;
 
     font-size: 16px;
 }
+
 /* -- CONTENU HÉBERGEMENT -- */
 #hebergementMarseille {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .vignette {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+
+    margin-right: 2%;
 
     padding: 7px;
     border-radius: 20px;
@@ -218,11 +253,13 @@ header h2 {
 
     margin-bottom: 40px;
 }
+
 .photo {
     height: 150px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
+
 #hebergementMarseille .stars {
     margin-top: -10px;
     margin-left: 10px;
@@ -240,67 +277,80 @@ header h2 {
     flex-direction: column;
     margin-left: 2%;
 }
+
 .popTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /* -- CONTENU POPULAIRE -- */
 #populaire {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 #populaire .contenu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#populaire h3 {
+
+#populaire h4 {
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
 }
+
 #populaire p {
     margin-top: -15px;
     margin-left: 20px;
     font-size: 16px;
 }
+
 #populaire .stars {
     padding-bottom: 7px;
     margin-left: 20px;
 }
+
 .vignettePop {
     display: flex;
-    
+
     padding: 7px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #e4e4e4;
-    
+
     width: 100%;
     height: 180px;
     margin-bottom: 40px;
 }
+
 .photoPop {
     width: 160px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
+
 /* ----- BLOC ACTIVITÉS ----- */
 #activites {
     margin-top: 60px;
 }
+
 #activitesMarseille {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#activitesMarseille h3 {
+
+#activitesMarseille h4 {
     margin: 20px 0 20px 20px;
 }
+
 /* ----- CONTENU ACTIVITÉS ----- */
-.vieuxPort, .calanques {
+.vieuxPort,
+.calanques {
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #e4e4e4;
@@ -309,11 +359,14 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
-#vieuxPort, #calanques {
+
+#vieuxPort,
+#calanques {
     height: 500px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
+
 .pomegues {
     border-radius: 20px;
     background-color: white;
@@ -323,11 +376,13 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
+
 #pomegues {
     height: 250px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
+
 .frioul {
     border-radius: 20px;
     background-color: white;
@@ -338,13 +393,15 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
+
 #frioul {
     height: 150px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
-.notreDame, .longchamp {
+.notreDame,
+.longchamp {
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #e4e4e4;
@@ -353,7 +410,9 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
-#notreDame, #longchamp {
+
+#notreDame,
+#longchamp {
     height: 200px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -363,7 +422,7 @@ header h2 {
 footer {
     display: flex;
     background-color: #f2f2f2;
-    
+
     margin-top: 30px;
     padding: 2%;
 }
@@ -371,15 +430,17 @@ footer {
 footer ul {
     list-style-type: none;
     list-style-position: outside;
-    
+
     font-size: 20px;
     padding-left: 0px;
     padding-right: 70px;
 }
+
 footer li {
     padding-top: 12px;
 }
+
 .foot {
-    width: 350px;
+    width: 33%;
     padding-left: 2%;
 }
