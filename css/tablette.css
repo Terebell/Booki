@@ -1,38 +1,40 @@
 @media screen and (max-width: 991px) {
 
-    .fa-location-dot {
-        padding: 18px 13px 20px 13px;
+    #hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
     }
 
-    #hebergement {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    margin: auto;
-    }
     #hebergementMarseille {
         justify-content: space-around;
     }
-    #pop, #heb {
-        width: 100%; 
+
+    #pop,
+    #heb {
+        width: 100%;
         margin: 0;
     }
+
     #pop {
         margin-bottom: 5%;
     }
-    .photoPop{
+
+    .photoPop {
         width: 200px;
     }
 
-    #activites{
+    #activites {
         margin: auto;
     }
+
     #activitesMarseille {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%
-    }    
+    }
 
     footer {
         display: flex;
@@ -40,6 +42,7 @@
         justify-content: space-around;
         padding: 2% 10% 2% 10%;
     }
+
     footer ul {
         margin-left: 0;
         font-size: 15px;

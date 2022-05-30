@@ -1,5 +1,7 @@
-@media screen and (max-width: 767px) { 
-    main, header {
+@media screen and (max-width: 767px) {
+
+    main,
+    header {
         width: 100%;
     }
 
@@ -8,11 +10,12 @@
         flex-direction: column;
         padding-bottom: 2%;
         text-align: center;
-        
     }
+
     .logoBooki {
         margin-top: 7%;
     }
+
     nav ul {
         display: flex;
         font-size: 20px;
@@ -22,39 +25,49 @@
         margin-right: 0;
         padding-left: 0;
     }
+
     nav li {
         justify-content: center;
         width: 100%;
         margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 20px;
+        border-bottom: 4px solid #f2f2f2;
     }
-    nav li .active {
-        width: 100%;
+
+    nav li:hover {
         border-top: none;
-        border-bottom: 4px #0065FC solid;
-        text-align: center;
-    }
-    nav li .inactive {
-        width: 100%;
-        border-bottom: 4px #f2f2f2 solid;
-        text-align: center;
+        border-bottom: 4px solid #0065FC;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #recherche {
-        padding:0 6% 0 6%;
+        padding: 0 6% 0 6%;
     }
+
     button {
         border-radius: 18px;
         padding: 17px;
         margin-left: -15px;
     }
-    #filtres a{
+
+    #filtres a {
         margin-bottom: 2%;
     }
+
+    #filtres h3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     header h2 {
         display: block;
         width: 100%;
     }
+
     #search {
         display: flex;
         justify-content: center;
@@ -62,12 +75,15 @@
         padding-bottom: 2%;
         width: 100%;
     }
+
     #inputSearch {
         flex-grow: 1;
     }
+
     #search button span {
         display: none;
     }
+
     #search button .fa-magnifying-glass {
         display: block;
     }
@@ -75,13 +91,17 @@
     #heb {
         background: none;
     }
+
     #hebergementMarseille {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .vignette {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #pop {
@@ -93,34 +113,55 @@
         flex-direction: column;
         width: 88%;
         margin-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
+
     #activitesMarseille {
         width: 100%;
     }
-    .vieuxPort, .pomegues, .frioul, .calanques, .notreDame, .longchamp {
+
+    .vieuxPort,
+    .pomegues,
+    .frioul,
+    .calanques,
+    .notreDame,
+    .longchamp {
         border-radius: 20px;
         background-color: white;
         box-shadow: 2px 2px 20px #e4e4e4;
         height: 270px;
         margin-bottom: 40px;
         width: 100%;
-        }
+    }
 
-    #colonne1, #colonne2 {
+    #colonne1,
+    #colonne2 {
         width: 100%;
     }
-    #vieuxPort, #pomegues, #frioul, #calanques, #notreDame, #longchamp {
+
+    #vieuxPort,
+    #pomegues,
+    #frioul,
+    #calanques,
+    #notreDame,
+    #longchamp {
         height: 200px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
-    } 
+    }
 
     footer {
         display: flex;
         flex-direction: column;
     }
+
     .foot {
         width: 100%;
+        padding: 0;
     }
 
+    footer ul {
+        padding-right: 0;
+    }
 }
