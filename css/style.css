@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400,wght@700&display=swap');
 
 * {
     /* box-sizing appliqué à tous les éléments */
@@ -18,17 +18,18 @@ main {
 
 h2 {
     font-size: 29px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 25px;
+    font-weight: 700;
 }
 
 h4 {
     font-size: 21px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p {
@@ -224,7 +225,7 @@ header h3 {
 }
 
 #heb p {
-    margin-top: -15px;
+    margin-top: -22px;
     margin-left: 10px;
     font-size: 16px;
 }
