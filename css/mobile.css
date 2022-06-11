@@ -6,43 +6,43 @@
     }
 
     header h2 {
-        font-size: 280%;
+        font-size: 140%;
+        padding-bottom: 2%;
     }
 
     h2 {
-        font-size: 260%;
+        font-size: 140%;
     }
 
     h3 {
-        font-size: 230%;
+        font-size: 130%;
     }
 
     h4 {
-        font-size: 220%;
+        font-size: 110%;
     }
 
     p {
-        font-size: 180%;
+        font-size: 100%;
     }
 
     #recherche,
     #activites,
     footer {
         padding: 4%;
+        padding-top: 0;
     }
 
     /* ----- NAVIGATION ----- */
     nav {
         display: flex;
         flex-direction: column;
-        padding-bottom: 2%;
         text-align: center;
     }
 
     .logoBooki {
-        width: 60%;
+        width: 35%;
         margin-top: 10%;
-        margin-bottom: 10%;
     }
 
     nav ul {
@@ -55,7 +55,7 @@
     }
 
     nav li {
-        font-size: 170%;
+        font-size: 90%;
         font-weight: 500;
         justify-content: center;
         width: 100%;
@@ -63,7 +63,7 @@
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         border-bottom: 4px solid #f2f2f2;
     }
 
@@ -80,80 +80,118 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
+        height: 100%;
+    }
+
+    .fa-location-dot {
+        font-size: 140%;
+        height: 100%;
+        border-bottom: #f2f2f2 solid 3px;
+        border-radius: 15px 0 0 15px;
+        padding: 16px;
+        margin-right: 0;
     }
 
     #search input {
         padding-left: 30px;
-        font-size: 180%;
+        font-size: 100%;
         width: 60%;
         padding: 0;
         padding-left: 4%;
     }
 
     button {
-        width: 90px;
-        height: 90px;
-        border-radius: 30px;
-        margin-left: -50px;
-    }
-
-    #inputSearch {
-        flex-grow: 1;
-        height: 90px;
-        font-size: 180%;
-        padding: 0;
+        height: 100%;
+        border-radius: 15px;
+        padding: 16px;
+        margin-left: -12px;
     }
 
     #search button span {
         display: none;
-        width: 90px;
     }
 
     #search button .fa-magnifying-glass {
         display: block;
-        font-size: 30px;
+        font-size: 100%;
+        padding: 5px;
+    }
+
+    #inputSearch {
+        flex-grow: 1;
+        height: 60px;
+        font-size: 180%;
+        width: 64%;
     }
 
     #infos {
         align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .fa-info {
-        margin-top: 30px;
-    }
-
-    .fa-location-dot {
-        font-size: 30px;
-        padding: 26px 15px 0 30px;
-        margin-right: -5px;
-        width: 90px;
-        height: 90px;
-        border-radius: 30px 0 0 30px;
+        margin-top: 8px;
+        margin-right: 2%;
+        padding: 5px 10px 5px 10px;
+        font-size: 100%;
     }
 
     /* ----- FILTRES ----- */
     #filtres a {
         margin-bottom: 2%;
-        font-size: 170%;
-        padding: 0 30px 0 0;
+        font-size: 100%;
+        padding: 0 20px 0 0;
+        margin-right: 2%;
     }
 
     #fasEconomy,
     #fasLove,
     #fasPets {
-        padding: 30px;
-        margin-right: 13px;
+        padding: 10px;
+        margin-right: 10px;
     }
 
     #fasFamily {
-        padding: 25px 30px 25px 30px;
+        padding: 10px 13px 10px 13px;
         margin-right: 13px;
     }
 
     #filtres h3 {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    /* -- ASIDE POP -- */
+    #pop {
+        border-radius: 0;
+        width: 100%;
+        padding: 3%;
+    }
+
+    #pop h4 {
+        padding-top: 0;
+    }
+
+    #pop .stars {
+        padding-bottom: 4%;
+    }
+
+    #populaire {
+        height: 100%;
+    }
+
+    .vignettePop {
+        height: 180px;
+        margin-bottom: 4%;
+    }
+
+    .fa-chart-line {
+        font-size: 110%;
+    }
+
+    .photoPop {
+        width: 40%;
     }
 
     /* ----- SECTION HÉBERGEMENTS ----- */
@@ -169,12 +207,12 @@
 
     #heb p,
     #pop p {
-        font-size: 150%;
+        font-size: 100%;
     }
 
     #heb .stars,
     #pop .stars {
-        font-size: 130%;
+        font-size: 90%;
     }
 
     #heb {
@@ -188,39 +226,13 @@
     }
 
     #heb img {
-        min-height: 250px;
+        height: 120px;
     }
 
     .vignette {
         margin-left: 0;
         margin-right: 0;
-    }
-
-    /* -- ASIDE POP -- */
-    #pop {
-        border-radius: 0;
-        width: 100%;
-        padding: 3%;
-    }
-
-    #pop h4 {
-        padding-top: 4%;
-    }
-
-    #pop .stars {
-        padding-bottom: 4%;
-    }
-
-    #pop a {
-        height: 300px;
-    }
-
-    .fa-chart-line {
-        font-size: 35px;
-    }
-
-    .photoPop {
-        width: 40%;
+        margin-bottom: 4%;
     }
 
     /* ----- SECTION ACTIVITÉS ----- */
@@ -229,7 +241,7 @@
     }
 
     #activitesMarseille h4 {
-        margin: 30px 0 20px 20px;
+        margin: 20px 0 20px 20px;
     }
 
     .vieuxPort,
@@ -241,8 +253,8 @@
         border-radius: 20px;
         background-color: white;
         box-shadow: 2px 2px 20px #e4e4e4;
-        height: 360px;
-        margin-bottom: 40px;
+        height: 200px;
+        margin-bottom: 7%;
         width: 100%;
     }
 
@@ -257,7 +269,7 @@
     #calanques,
     #notreDame,
     #longchamp {
-        height: 265px;
+        height: 140px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
@@ -266,6 +278,12 @@
     footer {
         display: flex;
         flex-direction: column;
+    }
+
+    footer h4 {
+        font-size: 130%;
+        margin-top: 10%;
+        margin-bottom: 2%;
     }
 
     .foot {
@@ -278,6 +296,6 @@
     }
 
     footer li {
-        font-size: 30px;
+        font-size: 115%;
     }
 }
