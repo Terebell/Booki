@@ -1,31 +1,37 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
-    header h2 {
-        font-size: 45px;
-        font-weight: 700;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
-
-    h4 {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-    main,
-    header {
+    header,
+    main {
         width: 100%;
     }
 
+    header h2 {
+        font-size: 280%;
+    }
+
+    h2 {
+        font-size: 260%;
+    }
+
+    h3 {
+        font-size: 230%;
+    }
+
+    h4 {
+        font-size: 220%;
+    }
+
+    p {
+        font-size: 180%;
+    }
+
+    #recherche,
+    #activites,
+    footer {
+        padding: 4%;
+    }
+
+    /* ----- NAVIGATION ----- */
     nav {
         display: flex;
         flex-direction: column;
@@ -35,12 +41,12 @@
 
     .logoBooki {
         width: 60%;
-        margin-top: 7%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     nav ul {
         display: flex;
-        font-size: 20px;
         font-weight: bold;
         width: 100%;
         margin-left: 0;
@@ -49,7 +55,8 @@
     }
 
     nav li {
-        font-size: 30px;
+        font-size: 170%;
+        font-weight: 500;
         justify-content: center;
         width: 100%;
         margin-right: 0;
@@ -67,19 +74,68 @@
         padding-right: 0;
     }
 
-    #recherche {
-        padding: 0 6% 0 6%;
+    /* ----- ZONE DE SAISIE DE RECHERCHE ----- */
+    #search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #search input {
+        padding-left: 30px;
+        font-size: 180%;
+        width: 60%;
+        padding: 0;
+        padding-left: 4%;
     }
 
     button {
-        border-radius: 18px;
-        padding: 17px;
-        margin-left: -15px;
+        width: 90px;
+        height: 90px;
+        border-radius: 30px;
+        margin-left: -50px;
     }
 
+    #inputSearch {
+        flex-grow: 1;
+        height: 90px;
+        font-size: 180%;
+        padding: 0;
+    }
+
+    #search button span {
+        display: none;
+        width: 90px;
+    }
+
+    #search button .fa-magnifying-glass {
+        display: block;
+        font-size: 30px;
+    }
+
+    #infos {
+        align-items: flex-start;
+    }
+
+    .fa-info {
+        margin-top: 30px;
+    }
+
+    .fa-location-dot {
+        font-size: 30px;
+        padding: 26px 15px 0 30px;
+        margin-right: -5px;
+        width: 90px;
+        height: 90px;
+        border-radius: 30px 0 0 30px;
+    }
+
+    /* ----- FILTRES ----- */
     #filtres a {
         margin-bottom: 2%;
-        font-size: 30px;
+        font-size: 170%;
         padding: 0 30px 0 0;
     }
 
@@ -100,154 +156,80 @@
         margin-bottom: 10px;
     }
 
-    header h2 {
-        display: block;
-        width: 100%;
+    /* ----- SECTION HÉBERGEMENTS ----- */
+    #heb h4,
+    #pop h4 {
+        margin-bottom: 25px;
+        margin-right: 0;
     }
 
-    #search {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 2%;
-        width: 100%;
-        margin-top: 50px;
+    #heb h3 {
+        margin-left: 0;
     }
 
-    #search input {
-        padding-left: 30px;
-        font-size: 30px;
+    #heb p,
+    #pop p {
+        font-size: 150%;
     }
 
-    button {
-        width: 90px;
-        height: 90px;
-        border-radius: 30px;
-        margin-left: -50px;
-    }
-
-    #inputSearch {
-        flex-grow: 1;
-        height: 90px;
-    }
-
-    #search button span {
-        display: none;
-        width: 90px;
-    }
-
-    #search button .fa-magnifying-glass {
-        display: block;
-        font-size: 30px;
-    }
-
-    #infos {
-        /* display: flex; */
-        align-items: flex-start;
-    }
-
-    .fa-info {
-        margin-top: 30px;
-    }
-
-    .fa-location-dot {
-        font-size: 30px;
-        padding: 26px 15px 0 30px;
-        margin-right: -5px;
-        width: 90px;
-        height: 90px;
-        border-radius: 30px 0 0 30px;
+    #heb .stars,
+    #pop .stars {
+        font-size: 130%;
     }
 
     #heb {
-        background: none;
+        width: 100%;
+        background-color: transparent;
+        padding: 4%;
     }
 
-    #hebergementMarseille {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #heb a {
+        width: 100%;
     }
 
-    #hebergementMarseille h4 {
-        margin-left: 20px;
-    }
-
-    #hebergementMarseille p {
-        font-size: 23px;
-        margin-top: -35px;
-        margin-left: 20px;
-    }
-
-    #hebergementMarseille .stars {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .photo {
-        height: 200px;
+    #heb img {
+        min-height: 250px;
     }
 
     .vignette {
-        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
 
+    /* -- ASIDE POP -- */
     #pop {
         border-radius: 0;
-        padding-left: 6%;
-        padding-right: 6%;
+        width: 100%;
+        padding: 3%;
+    }
+
+    #pop h4 {
+        padding-top: 4%;
+    }
+
+    #pop .stars {
+        padding-bottom: 4%;
+    }
+
+    #pop a {
+        height: 300px;
     }
 
     .fa-chart-line {
         font-size: 35px;
     }
 
-    .vignettePop {
-        height: 300px;
-        padding: 10px;
-        margin-bottom: 30px;
-    }
-
     .photoPop {
-        width: 270px;
+        width: 40%;
     }
 
-    .contenu {
-        padding-left: 20px;
-        padding-right: 40px;
-    }
-
-    #populaire p {
-        font-size: 23px;
-        margin-top: -30px;
-    }
-
-    #populaire h4 {
-        margin-top: 25px;
-    }
-
-    #populaire .stars {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    #activites {
-        display: flex;
-        flex-direction: column;
-        width: 88%;
-        margin-top: 2%;
-        /* padding-left: 1%;
-        padding-right: 1%; */
-    }
-
+    /* ----- SECTION ACTIVITÉS ----- */
     #activitesMarseille {
-        width: 100%;
+        flex-direction: column;
     }
 
     #activitesMarseille h4 {
-        margin: 30px 0 0 30px;
+        margin: 30px 0 20px 20px;
     }
 
     .vieuxPort,
@@ -280,6 +262,7 @@
         object-fit: cover;
     }
 
+    /* ----- FOOTER ----- */
     footer {
         display: flex;
         flex-direction: column;
